@@ -77,8 +77,8 @@ class App extends Component{
 		let message = "Just refresh page if you need to chat again. :)"
 		const msg = {
 			MsgID: this.generateUUID(),
-			MsgFromID: guestID,
-			MsgToID: "Jesse",
+			MsgFromID: "Jesse",
+			MsgToID: guestID,
 			MsgBody: message,
 			MsgTime: "2021-10-24T22:58:39.983005+08:00",
 			MsgAuthor: "Me"
