@@ -1,0 +1,212 @@
+/* 
+	This program is using bootstrap
+	this css are just suplimentary.
+*/
+
+html, body{
+	height: 100%;
+}
+
+.nopadding{
+	padding: 0px;
+}
+
+.half-screen-height{
+	height:50%;
+}
+
+.one-fourth-screen-height{
+	height:25%;
+}
+
+.three-fourth-screen-height{
+	height: 75%;
+}
+
+.whole-screen-height{
+	height: 100%;
+}
+
+.wordwrap{
+	word-break: break-all;
+}
+
+/* Panels */
+.panel1{
+	border-left: 1px solid #337ab7;
+	border-right: 1px solid #337ab7;
+	border-bottom: 1px solid #337ab7;
+}
+
+.panel2{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.panel1-body{
+	height: 71%;
+	/* overflow: scroll; */
+}
+
+.panel1-message-body{
+	height: 90%;
+	overflow: scroll;
+	background-color: lightgray;
+}
+
+.panel1-footer{
+	position: absolute;
+	bottom: 50%;
+	width: 100%;
+	left: 0px;
+}
+
+.panel2-footer{
+	position: absolute;
+	bottom: 1%;
+	width: 100%;
+	left: 0px;
+	z-index: 2;
+}
+
+.bottom-panel-height{
+	height: 40%;
+}
+
+
+/* Message */
+.message-container-height{
+	height: 95%;
+}
+
+.message{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.message ul{
+	padding-left: 0px;
+}
+
+.bubble-pic-client{
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+.bubble-pic-agent{
+	float: right;
+	width: 40px;
+	height: 40px;
+}
+
+.bubble-container{
+	overflow: hidden;
+}
+
+.bubble-arrow-client{
+	float: left;
+	width: 20px;
+	height: 40px;
+	position: relative;
+}
+
+.bubble-arrow-agent{
+	float: right;
+	width: 20px;
+	height: 40px;
+	position: relative;
+}
+
+.bubble-arrow-client span.ar1{
+	background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    position: absolute;
+    top: 0px;
+    border-bottom-left-radius: 40px;
+}
+
+.bubble-arrow-agent span.ar1{
+	background-color: linen;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    border-bottom-right-radius: 40px;
+}
+
+.bubble-arrow-client span.ar2{
+	background-color: lightgray;
+    width: 30px;
+    height: 25px;
+    right: 0px;
+    position: absolute;
+    top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.bubble-arrow-agent span.ar2{
+	background-color: lightgray;
+    width: 30px;
+    height: 25px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.bubble-message-client{
+	background-color: aliceblue;
+	border-radius: 10px;
+	padding: 10px;
+	max-width: 70%;
+	float: left;
+	box-shadow: 2px 2px 5px #888888;
+	margin-bottom: 5px;
+}
+
+.bubble-message-agent{
+	background-color: linen;
+	border-radius: 10px;
+	padding: 10px;
+	max-width: 70%;
+	float: right;
+	box-shadow: 2px 2px 5px #888888;
+	margin-bottom: 5px;
+}
+
+.bubble-time i{
+	font-size: 10px;
+}
+
+.bubble-pic-client{
+	/* background-image: url("../media/icons/clientavatar.png"); */
+	background-size: 40px;
+	position: relative;
+	z-index: 1;
+}
+
+.bubble-pic-agent{
+	/* background-image: url("../media/icons/clientavatar.png"); */
+	background-size: 40px;
+	position: relative;
+	z-index: 1;
+}
+
+.nav-item a:hover i{
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+
+.nav-item a i{
+	display: none;
+	float: right;
+
+}
