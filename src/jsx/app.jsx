@@ -75,6 +75,30 @@ class App extends Component{
 	onDisconnect(){
 		console.log('Chatter Admin disconnected...')
 		this.setState({connected: false});
+		
+		const msg = {
+			MsgID: this.generateUUID(),
+			MsgFromID: guestID,
+			MsgToID: "Jesse",
+			MsgBody: "Just refresh page if you need to chat again. :)",
+			MsgTime: "2021-10-24T22:58:39.983005+08:00",
+			MsgAuthor: "Me"
+		 }
+		console.log(`MY MSG====> ${JSON.stringify(msg)}`)
+		// let createdAt = new Date;
+		// let author = users.length > 0 ? users[0].name : 'anonymous';
+		// let authorId = 0; //Change later 
+		ulheight = document.getElementById('msgul').style.height;
+		// messages.push({id: messages.length, body, createdAt, author, authorId});
+		messages.push(msg)
+		// authorId = 1;
+		// messages.push({id: messages.length, body, createdAt, author, authorId});
+		this.setState({messages, ulheight});
+
+		// TODO: Send to server
+		//let {activeChannel} = this.state;
+		console.log("Sending message")
+		this.socket.emit('msg_in',{msg:message,recipientid:parseInt(activeUser.ID), session});
 	}
 
 	onLoadChannels(channelArray){
