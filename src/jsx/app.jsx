@@ -76,6 +76,7 @@ class App extends Component{
 		console.log('Chatter Admin disconnected...')
 		this.setState({connected: false});
 		
+		let {guestID} = this.state;
 		const msg = {
 			MsgID: this.generateUUID(),
 			MsgFromID: guestID,
