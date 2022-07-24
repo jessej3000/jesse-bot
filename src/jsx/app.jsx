@@ -74,9 +74,6 @@ class App extends Component{
 
 	onDisconnect(){
 		let {guestID} = this.state;
-		console.log('Chatter Admin disconnected...')
-		this.setState({connected: false});
-		
 		const msg = {
 			MsgID: this.generateUUID(),
 			MsgFromID: guestID,
@@ -100,6 +97,11 @@ class App extends Component{
 		//let {activeChannel} = this.state;
 		console.log("Sending message")
 		this.socket.emit('msg_in',{msg:message,recipientid:parseInt(activeUser.ID), session});
+		
+		console.log('Chatter Admin disconnected...')
+		this.setState({connected: false});
+		
+		
 	}
 
 	onLoadChannels(channelArray){
