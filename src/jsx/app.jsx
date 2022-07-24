@@ -73,7 +73,7 @@ class App extends Component{
 	}
 
 	onDisconnect(){
-		let {ulheight, guestID} = this.state;
+		let {messages, ulheight, guestID} = this.state;
 		let message = "Just refresh page if you need to chat again. :)"
 		const msg = {
 			MsgID: this.generateUUID(),
