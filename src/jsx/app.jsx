@@ -29,7 +29,7 @@ class App extends Component{
 
 	componentDidMount(){
 		// let ws = new WebSocket('ws://localhost:9090/')
-		let ws = new WebSocket('wss://jesse-server.herokuapp.com//')
+		let ws = new WebSocket('wss://jesse-server.herokuapp.com/')
 		let socket = this.socket = new Socket(ws);
 		socket.on('connect', this.onConnect.bind(this));
 		socket.on('disconnect', this.onDisconnect.bind(this));
