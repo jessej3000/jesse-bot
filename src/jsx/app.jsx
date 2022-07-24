@@ -73,12 +73,13 @@ class App extends Component{
 	}
 
 	onDisconnect(){
-		let {guestID} = this.state;
+		let {ulheight, guestID} = this.state;
+		let message = "Just refresh page if you need to chat again. :)"
 		const msg = {
 			MsgID: this.generateUUID(),
 			MsgFromID: guestID,
 			MsgToID: "Jesse",
-			MsgBody: "Just refresh page if you need to chat again. :)",
+			MsgBody: message,
 			MsgTime: "2021-10-24T22:58:39.983005+08:00",
 			MsgAuthor: "Me"
 		 }
